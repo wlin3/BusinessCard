@@ -17,8 +17,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="serif-monospace"
-        android:padding="20dp"
-        android:text="coffee shop"
+        android:paddingTop="20dp"
+        android:text="le bean"
         android:textSize="48sp"
         android:layout_centerHorizontal="true"
         />
@@ -28,34 +28,76 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/shop"
-        android:layout_centerHorizontal="true"
-        android:textSize="24sp"
+        android:layout_marginTop="-40dp"
         android:fontFamily="serif-monospace"
-        android:paddingBottom="20dp"
-        android:text="the coffee shop is the best. They serve good coffee." />
+        android:paddingTop="20dp"
+        android:text="le bean is the best coffee shop in the area, we serve the best kinds of coffee. We are always able to satisfy our customers. "
+        android:textSize="18sp" />
+
     <ImageView
         android:id="@+id/border"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/border"
-        android:layout_below="@+id/shop"/>
+        android:layout_below="@+id/main"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/main"
+        android:layout_below="@+id/border"
         android:fontFamily="serif-monospace"
-        android:paddingBottom="20dp"
+        android:paddingTop="5dp"
         android:text="269-889-5232"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
     <TextView
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/phone"
         android:fontFamily="serif-monospace"
-        android:paddingBottom="20dp"
+        android:paddingTop="5dp"
         android:text="coffeeshop@gmail.com"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:fontFamily="serif-monospace"
+        android:paddingTop="5dp"
+        android:text="Richland, MI"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/border"
+        android:fontFamily="serif-monospace"
+        android:paddingTop="5dp"
+        android:text="Hours of Operation"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/operation"
+        android:fontFamily="serif-monospace"
+        android:paddingTop="5dp"
+        android:text="Monday-Saturday"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/days"
+        android:fontFamily="serif-monospace"
+        android:paddingTop="5dp"
+        android:text="6AM-9PM"
+        android:textSize="18sp" />
+    
 </RelativeLayout>
